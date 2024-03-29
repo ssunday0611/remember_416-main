@@ -191,11 +191,11 @@ $(document).ready(function () {
 
   //초기화
   $("#reset").on("click", function () {
-    $(".preview_typing").text("바다는 가라앉지 않는다.");
+    $(".preview_typing").text("바다에도 봄이 온다");
     $('.preview_typing').css("background-color", "#FFFCE3");
     $('.preview_typing').css("background-image", "");
-    $('.preview_typing').css("font-family", "April16th-Promise");
-    $('.preview_typing').css("font-size", "4.5rem");
+    $('.preview_typing').css("font-family", "April16th-Life");
+    $('.preview_typing').css("font-size", "4rem");
     $('.weight-box').removeClass("active");
     $('.life_btn').addClass("active");
     $("#customRange1").val("50");

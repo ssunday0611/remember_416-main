@@ -16,10 +16,10 @@
             <img src="./image/logo.png" class="logo">
           </div>
           <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand navmenu" onClick="javascript:window.scrollTo(0,0)">홈</a>
-            <a class="navbar-brand navmenu" href="#introduce">소개</a>
-            <a class="navbar-brand navmenu" href="#campaign">캠페인</a>
-            <a class="navbar-brand navmenu" href="#download">내려받기</a>
+            <a class="navmenu active_txt" onClick="javascript:window.scrollTo(0,0)">홈</a>
+            <a class=" navmenu" href="#introduce">소개</a>
+            <a class=" navmenu" href="#campaign">캠페인</a>
+            <a class=" navmenu" href="#download">내려받기</a>
           </nav>
         </header>
         <div class="contents">
@@ -31,7 +31,7 @@
               </video>
             </div>
           </div>          
-          <div id="home" class="section1_1">
+          <div class="section1_1">
             <div class="title2">
               <p>2024년 4월 16일, 세월호 참사가 어느새 10주기를 맞이합니다. 우리는 “참사 이후는 달라져야 한다”는 다짐을 기억하며, 4월 16일의 노란 리본을 기억합니다. 10년이라는 시간은 무언가를 잊을 만큼 긴 시간이지만, 우리는 기억은 힘이 세다는 것을 알고 있습니다. 4.16재단은 기억의 힘으로 생명이 존중받는 안전한 사회를 만들어 갑니다.</p>
             </div>
@@ -50,12 +50,6 @@
                   </video>
                 </div>
               </div>
-              <div class="title5">
-                <div class="title5_div">
-                  <p class="p_title">획의 특징</p>
-                  <p class="p_content">«사월십육일체»는 리본이 연결되는 모습을 획의 특징으로 형상화하였습니다. 특히 'ㄱ', 'ㄴ', 'ㅂ' 등의 자음에서 리본이 접히는 듯한 인상을 찾아볼 수 있습니다.</p>
-                </div>
-              </div>
               <div class="scrolling_text">
                 <div class="text">
                     <span>나와 같은 마음인 사람을 발견했다는 데서 오는 반가움을 느끼는 것이다.</span>
@@ -66,7 +60,7 @@
               </div>
               <div class="title6">
                 <div class="title6_div">
-                  <p class="p_title">네모틀 구조</p>
+                  <p class="p_title">네모틀 구조</p><br>
                   <p class="p_content">«사월십육일체»는 네모틀에 글자를 꽉 채우는 장체로 설계하여, 글줄에서 안정적이고 깔끔한 인상을 가지고 있습니다. 글자 하나하나의 분별력을 높여 명쾌하며 비교적 크게 사용하는 제목용의 활용성을 높였습니다.</p>
                 </div>
               </div>
@@ -84,7 +78,7 @@
               </div>
               <div class="title8">
                 <div class="title8_div">
-                  <p class="p_title">컬러폰트</p>
+                  <p class="p_title">컬러폰트</p><br>
                   <p class="p_content">컬러폰트는 4.16재단 CI 색상을 바탕으로 제작되었습니다. 메인이 되는 두 색상의 노란 컬러는 '기억과 안전'을 상징하며 각각 리본의 앞면과 뒷면을 연상케합니다. 이를 통해 리본이 유기적으로 접히는 듯한 유쾌한 모습을 담았습니다. 글자 하나하나의 색상 조합이 조화롭게 보이도록 획마다 명확한 규칙을 설정하여, 획이 많아 복잡한 형태에도 균형감있는 인상을 가지고 있습니다.</p>
                 </div>
               </div>
@@ -141,14 +135,14 @@
                   <div class="select_background" >
                     <p class="title">배경이미지</p>
                     <div class="background_img">
-                      <div class="background-box" img-src="./image/background_img1" id="img1"></div>
+                      <div class="background-box active" img-src="./image/background_img1" id="img1"></div>
                       <div class="background-box" id="img2" img-src="./image/background_img2"></div>
                       <div class="background-box" id="img3" img-src="./image/background_img3"></div>
                       <div class="background-box" id="img4" img-src="imgUpload"></div>
                       <input type="file" style="display:none" id="file">
                     </div>
                     <div class="background_img_txt">
-                      <p>리본</p>
+                      <p class="active_txt">리본</p>
                       <p>고래</p>
                       <p>종이배</p>
                       <p>업로드</p>
@@ -192,9 +186,7 @@
                     <p class="font_spec">otf, ttf, woff, woff2</p>
                     <br><br>
                     <p class="font_format">권장 환경</p>
-                    <p class="font_spec">사월십육일체는 컬러 데이터 속성까지 포함하는 SVG(Scalable Vector</p>
-                    <p class="font_spec">Graphics) 형식의 폰트입니다. 컬러 폰트가 구현되지 않는 경우 아래의 권</p>
-                    <p class="font_spec">장 환경을 확인하시고 업데이트를 진행해 주세요.</p>
+                    <p class="font_spec">사월십육일체는 컬러 데이터 속성까지 포함하는 SVG(Scalable VectorGraphics) 형식의 폰트입니다. 컬러 폰트가 구현되지 않는 경우 아래의 권장 환경을 확인하시고 업데이트를 진행해 주세요.</p>
                     <p class="font_spec">• Windows 10, macOS 10.14 Mojave 이상</p>
                     <p class="font_spec">• Adobe Apps: InDesign CC 2019+, Illustrator CC 2018+,</p>
                     <p class="font_spec">&nbsp; &nbsp; Photoshop CC 2017+ 이상, Pages 6.0, Numbers 4.0, and</p>
@@ -202,10 +194,8 @@
                     <p class="font_spec">• MS office 365: Word, Powerpoint 가능</p>
                     <br><br>
                     <p class="font_format">라이선스</p>
-                    <p class="font_spec">• «사월십육일체»는 누구나 사용할 수 있는 무료폰트로 영리적, 비영리적 </p>
-                    <p class="font_spec">&nbsp; &nbsp; 목적으로 자유롭게 활용이 가능합니다.</p>
-                    <p class="font_spec">• «사월십육일체»의 지식재산권은 4.16재단에 있으며 폰트 파일은 유로</p>
-                    <p class="font_spec">&nbsp; &nbsp; 로 판매할 수 없습니다.*</p>
+                    <p class="font_spec">• «사월십육일체»는 누구나 사용할 수 있는 무료폰트로 영리적, 비영리적 목적으로 자유롭게 활용이 가능합니다.</p>
+                    <p class="font_spec">• «사월십육일체»의 지식재산권은 4.16재단에 있으며 폰트 파일은 유로로 판매할 수 없습니다.*</p>
                   </div>
                 </div>
                 
