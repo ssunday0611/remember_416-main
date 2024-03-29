@@ -1,0 +1,814 @@
+/*
+@font-face{
+	font-family:"April16th-Promise";
+	src:url("../font/231205_April16th-Promise.woff2");
+} */
+
+html{
+  scroll-behavior: smooth;
+}
+
+@font-face{
+  font-family:"April16th-Life";
+	src:url("../font/April16th-Life.woff");
+}
+
+@font-face{
+  font-family:"April16th-Promise";
+	src:url("../font/April16th-Promise.woff");
+}
+
+@font-face{
+  font-family:"April16th-Safety";
+	src:url("../font/April16th-Safety.woff");
+}
+
+body{
+  margin: 0;
+  padding:0;
+  border:0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, a , p, span, div{font-weight:normal;  font-family:"April16th-Promise";}
+header, nav, section, article, aside, footer {display:block;}
+
+.navmenu{
+  color:black;
+  opacity: 30%;
+  font-weight: 400;
+}
+
+.copyright{
+  color:#FFFFFF;
+  font-size: 2rem;
+  margin-top : 2.4rem;
+  margin-left: 6rem;
+}
+
+.navmenu:hover{
+  color:#FFE100;
+  opacity: 100%;
+}
+
+.header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  z-index:10000;
+  height:10rem;
+  padding: 2rem 6rem 2rem 6rem;
+}
+
+.header_right{
+  right:0;
+}
+
+.section1{
+  margin-top: 23rem;
+  position: sticky;
+  z-index: -1;
+  top:0;
+}
+
+.section1_1{
+  margin-right: 13rem;
+  height:100%;
+  text-align: right;
+  display: flex;
+  justify-content: end;
+}
+
+.section1_title{
+  color: #FFE100;
+  font-size: 53rem;
+  bottom:0;
+  margin-left: 10rem;
+}
+
+.header_left{
+  right:0;
+}
+
+.logo{
+  width: 10rem;
+  left : 0px;
+}
+
+.contents{
+  margin: 0;
+  padding: 0;
+}
+
+.footer{
+  bottom:0;
+  left:0;
+  width:100vw;
+  z-index:10000;
+  /*
+  min-width:1080px;
+  */
+  height: 8rem;
+  background-color: #FFE100;
+}
+
+.logo2{
+  width: 12rem;
+  text-align: center;
+  float:right;
+  margin-top : 2rem;
+  margin-right: 6rem;
+}
+
+.main_video video{
+  width: 100%;
+}
+
+.ocean {
+  width:100vw;
+  /* position:absolute; */
+  /* bottom:100px; */
+  left:0;
+  bottom:10rem;
+  position:relative;
+}
+
+.title2{
+  margin-top : 7.5rem;
+  width:54.5rem;
+  margin-right:8rem;
+}
+
+.title2 p{
+  color: black;
+  width:68rem;
+  z-index:500;
+  font-size:2.5rem;
+  text-align:left;
+  margin-right:5rem;
+}
+
+.wave {
+  /* background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;  */
+  background: url(../image/wave.svg) repeat-x;
+  position: absolute;
+  /* top: -198px; */
+  width: 400rem;
+  height: 12.5rem;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+  opacity:0.7;
+  bottom:0;
+}
+
+.wave:nth-of-type(2) {
+  background: url(../image/wave2.svg) repeat-x;
+  /* top: -175px; */
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity:0.7;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+.section_back{
+  background-color: #FFFFFF;
+}
+
+.section2{
+  margin-top:69.2rem;
+  text-align: center;
+}
+
+.title3{
+  width:100vw;
+  display: inline-block;
+}
+
+.title3 p{
+  text-align:center;
+  color:black;
+  font-size:2.7rem;
+  width:76rem;
+  margin:auto;
+}
+
+.title4{
+  width:100vw;
+  margin-top: 10rem;
+  display: inline-block;
+}
+
+.title4 div{
+  margin:auto;
+  width:76rem;
+}
+
+.title4 div video{
+  width : 100%;
+}
+
+.title4 p{
+  font-size:16rem;
+  color: #FFE100;
+  text-align:left;
+  margin:auto;
+}
+
+.title5{
+  width:100vw;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: end;
+}
+
+.title5 div{
+  /*
+  margin-left: 75rem;
+  */
+  float:right;
+  margin-right: 8rem;
+  width:35.5rem;
+}
+
+.title5 .p_title{
+  font-size:2.8rem;
+  color: black;
+  text-align:left;
+  margin:auto;
+}
+
+.title5 .p_content{
+  font-size:2rem;
+  color: black;
+  text-align:left;
+  margin:auto;
+}
+
+
+
+/*  */
+
+.scrolling_text {
+  margin-top: 10rem;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+  background-color: #FFE100;
+  line-height: 18rem;
+}
+
+.text {
+  font-size: 20rem;
+  color: black;
+  animation: animate_text 30s linear infinite; /* The animation property */
+}
+
+@keyframes animate_text {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.title6{
+  width:100vw;
+  margin-top: 10rem;
+  display: inline-block;
+}
+
+.title6 div{
+  /* margin-left: 30rem; */
+  margin:auto;
+  width:76rem;
+}
+
+.title6 .p_title{
+  font-size:2.8rem;
+  color: black;
+  text-align:left;
+  margin:auto;
+}
+
+.title6 .p_content{
+  font-size:2rem;
+  color: black;
+  text-align:left;
+  margin:auto;
+}
+
+/* 비교 부분 */
+
+.title7{
+  width: 100%;
+  display:inline-block;
+}
+
+.title7_div{
+  margin:auto;
+  height: 25rem;
+  /*
+  width: 100rem;
+  */
+  justify-content : center;
+  display: flex;
+}
+
+.img-comp-container {
+  position: relative;
+  margin-top: 16rem;
+  width: 76rem;
+}
+
+.img-comp-img {
+  /* margin:auto; */
+  width: 100rem;
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  /* height: 25rem;  */
+  width: 76rem;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  top: -5rem;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 2.7rem;
+  height: 300%;
+  /* background-color: #2196F3; */
+  background-image: url(../image/compare_btn.png);
+  /* opacity: 0.7;
+  border-radius: 50%; */
+  background-size: cover;
+}
+
+
+.title8{
+  width:100vw;
+  margin-top: 20rem;
+  display: inline-block;
+}
+
+.title8 div{
+  margin: auto;
+  width:76rem;
+}
+
+.title8 .p_title{
+  font-size:2.8rem;
+  color: black;
+  text-align:left;
+  margin:auto;
+}
+
+.title8 .p_content{
+  font-size:2rem;
+  color: black;
+  text-align:left;
+  margin:auto;
+}
+
+
+.title9{
+  width: 100%;
+  margin-top: 16rem;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.btn_div{
+  display: inline-block;
+  text-align: center;
+}
+
+.preview_btn{
+  float: left;
+  width: 4.563rem;
+  height: 2.813rem;
+  font-family:"April16th-Promise";
+  border: 0.125rem solid #CCCCCC;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color:#CCCCCC;
+  font-size: 1.75rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.active{
+  background-color: #FFE100 !important;
+  color : #ffffff !important;
+  border : #FFE100 !important;
+}
+
+.preview_div{
+  display:inline-block;
+  margin:auto;
+}
+
+.life_preview{
+  width : 100rem;
+  display:grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  margin-top: 4rem;
+  text-align:center;
+  border-top: 0.1rem solid #CCCCCC;
+  border-left: 0.1rem solid #CCCCCC;
+}
+
+@media screen and (min-width: 400px) {
+  .life_preview{
+    width : 55vw;
+    height : 35vw;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6,1fr);
+  }
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  /* color: #000000; */
+  font-size: 5rem;
+  font-family:"April16th-Life";
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  border-right: 0.1rem solid #CCCCCC;
+  border-bottom: 0.1rem solid #CCCCCC;
+}
+
+.section3{
+  margin-top : 19.4rem;
+  text-align: center;
+}
+
+.section3 .p_title{
+  font-size : 7rem;
+}
+
+.section3 .p_content{
+  margin-top: 4rem;
+  font-size : 2.5rem;
+}
+
+.section3 .preview{
+  display: flex;
+  text-align: center;
+  margin: 8rem auto auto;
+  height : 40rem;
+  width: 80rem;
+}
+
+.section3 .preview > div{
+  flex: 1;
+}
+
+.preview_typing{
+  float: left;
+  text-align: center;
+  background-color: #FFFCE3;
+  width: 40rem;
+  height : 40rem;
+  margin: auto;
+  font-family: "April16th-Promise";
+  font-size: 4.5rem;
+  margin-right : 2.2rem;
+  border : 0.125rem solid #DDDDDD;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow:hidden;
+}
+
+
+.left{
+  margin-left : 2.2rem;
+  display: inline-block;
+}
+
+.left .title{
+  font-size : 1.6rem;
+  color : #999999;
+  text-align: left;
+}
+
+.select_box {
+  display: flex;
+}
+
+.select_font{
+  text-align: left;
+  margin-right: 0.75rem;
+}
+
+.weight-box{
+  float: left;
+  border: 0.125rem solid #EFEFEF;
+  padding:  0px, 0.75rem, 0px, 0.75rem;
+  width: 3.438rem;
+  height: 2.25rem;
+  text-align: center;
+  color : #CCCCCC;
+  font-size: 1.25rem;
+  margin-right: 0.74rem;
+  text-align: center;
+  line-height : 2.25rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+
+.select_size div{
+  float:left;
+  margin-right: 0.156rem;
+}
+
+.div_range div{
+  margin-right: 0.75rem;
+}
+
+.select_size span{
+  font-size: 1rem;
+}
+
+#customRange1 {
+  background: linear-gradient(to right, #FFE100 0%, #FFE100 50%, #FFE100 50%, #FFE100 100%);
+  height : 0.2rem;
+  width: 13.3rem;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+  accent-color: #FFE100;
+  margin-top: 0.9rem;
+}
+
+.first{
+  width:100vw;
+}
+
+.second{
+  width:100vw;
+  margin-top: 3.313rem;
+}
+
+.select_background{
+  margin-top: 3.313rem;
+}
+
+.button_div{
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.button_div2{
+  margin-top: 0.75rem;
+  display: flex;
+}
+
+.upload{
+  float:left;
+  width:34.625rem;
+  height : 6rem;
+  line-height : 6rem;
+  border : 0.125rem solid #FFE100;
+  color: #000000;
+  line-height:6rem;
+  font-size:1.5rem;
+}
+
+.background-box{
+  width: 8rem;
+  height: 8rem;
+  float:left;
+}
+
+#img1{
+  background-image: url(../image/background_img1.png);
+  background-size: cover;
+  margin-right: 0.792rem;
+}
+
+#img2{
+  background-image: url(../image/background_img2.png);
+  background-size: cover;
+  margin-right: 0.792rem;
+}
+
+#img3{
+  background-image: url(../image/background_img3.png);
+  background-size: cover;
+  margin-right: 0.792rem;
+}
+
+#img4{
+  background-image: url(../image/background_img4.png);
+  background-size: cover;
+  margin-right: 0.792rem;
+}
+
+.active2{
+  border : 0.125rem solid #FFE100;
+}
+
+.background_img_txt{
+  width : 100%;
+  margin-top:0.75rem;
+  display:inline-block;
+}
+
+.background_img_txt p{
+  width: 8rem;
+  height: 3rem;
+  float:left;
+  margin-right: 0.792rem;
+  font-size : 1.25rem;
+  color: #CCCCCC;
+}
+
+.save{
+  float:left;
+  width: 26.625rem;
+  height : 6rem;
+  background-color:#FFE100;
+  color: black;
+  line-height:6rem;
+  font-size:1.5rem;
+  margin-right:1.75rem;
+}
+
+.reset{
+  float:left;
+  width: 6rem;
+  height : 6rem;
+  border : 0.125rem solid #DDDDDD;
+  color: #DDDDDD;
+  line-height:6rem;
+  font-size:1.5rem;
+}
+
+/* 다운로드 */
+.section3{
+  margin-top : 12.125rem;
+  text-align: center;
+  width:100vw;
+}
+
+.section3_div{
+  width : 80rem;
+  margin:auto;
+}
+
+.title_div{
+  height:100%;
+  text-align: left;
+}
+
+.title_div > .title{
+  font-size: 3.75rem;
+  color: #000000;
+  margin-left:0px;
+}
+
+.font_format{
+  font-size:1.5rem;
+  color: #999999;
+  text-align: left;
+}
+
+.download_div{
+  margin-top : 3.75rem;
+  width : 80rem;
+  display:inline-block;
+}
+
+.download_div > .left{
+  float:left;
+  width: 36rem;
+  height: 12.75rem;
+  text-align: left;
+  margin-left: 0px;
+  margin-right:8rem;
+}
+
+.otf_btn{
+  background-image: url(../image/otf_btn.png);
+  background-size: cover;
+  width: 22.188rem;
+  height: 3.75rem;
+}
+
+.ttf_btn{
+  background-image: url(../image/ttf_btn.png);
+  background-size: cover;
+  width: 22.188rem;
+  height: 3.75rem;
+  margin-top:0.75rem;
+}
+
+.download_div > .right{
+  float:left;
+  width: 36rem;
+ 
+}
+
+.woff{
+  display:inline-block;
+  margin-top:0.75rem;
+}
+
+.woff_btn{
+  float:left;
+  background-image: url(../image/woff_btn.png);
+  background-size: cover;
+  width: 10.719rem;
+  height: 3.75rem;
+  margin-right: 0.75rem;
+}
+
+.woff2_btn{
+  float:left;
+  background-image: url(../image/woff2_btn.png);
+  background-size: cover;
+  width: 10.719rem;
+  height: 3.75rem;
+}
+
+.font_spec{
+  color:#000000;
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+
+/* 슬라이더 */
+
+#slider {
+  margin-top: 8rem;
+  height: 45.5rem;
+  width: calc(100vw + 20rem);
+  overflow:hidden;
+  margin-left: -20rem;
+  margin-bottom : 4rem;
+}
+
+.slide {
+  width:45.5rem;
+  height:45.5rem;
+  float:left;
+  text-align:center;
+  margin-right: 2rem;
+  background-size: cover;
+}
+
+/* tooltip */
+/* .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+} */
+
+.tooltip2 .tooltiptext {
+  visibility: hidden;
+  width: 35.1rem;
+  height: 7rem;
+  background-color: black;
+  font-size: 1.6rem;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family:"April16th-Promise";
+  text-align: left;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip2:hover .tooltiptext {
+  visibility: visible;
+}

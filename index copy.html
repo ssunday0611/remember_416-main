@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infinite Card Slider</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .card {
+    width: 200px;
+    height: 200px;
+    background-color: #f0f0f0;
+    margin: 10px;
+    flex-shrink: 0;
+  }
+</style>
+</head>
+<body>
+<div class="slider-container">
+  <div class="slider">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+    <div class="card">Card 5</div>
+    <div class="card">Card 1</div> <!-- 첫 번째 카드를 다시 추가하여 무한 루프를 만듭니다. -->
+  </div>
+</div>
+
+<script>
+  const slider = document.querySelector('.slider');
+  const cards = document.querySelectorAll('.card');
+  let currentIndex = 0;
+
+  function slideNext() {
+    currentIndex++;
+    if (currentIndex >= cards.length - 2) { // 마지막 카드 이후 첫 번째 카드로 이동
+      currentIndex = 0;
+    }
+    const offset = currentIndex * (cards[0].offsetWidth + 20); // 카드 너비와 마진 합산
+    slider.style.transform = `translateX(-${offset}px)`;
+  }
+
+  setInterval(slideNext, 3000);
+</script>
+</body>
+</html>
