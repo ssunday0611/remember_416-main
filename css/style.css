@@ -805,10 +805,15 @@ header, nav, section, article, aside, footer {display:block;}
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  bottom: 0.8rem;
-  left: 80%;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 
-.tooltip2:hover .tooltiptext {
-  visibility: visible;
+.otf_btn:hover .tooltiptext {
+  opacity: 1;
+}
+
+.ttf_btn:hover .tooltiptext {
+  opacity: 1;
 }

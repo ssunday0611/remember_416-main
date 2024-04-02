@@ -11,7 +11,7 @@
     </head>
     <body>
         <!-- 헤더 -->
-        <header class="header"  style="justify-content: space-between; display:flex;">
+        <header class="header"  style="justify-content: space-between; display:flex; visibility:hidden">
           <div class="header_left" >
             <img src="./image/logo.png" class="logo">
           </div>
@@ -24,20 +24,20 @@
         </header>
         <div class="contents">
           <!-- 홈 -->
-          <div id="home" class="section1">
+          <div id="home" class="section1" style="visibility:hidden">
             <div class="main_video">
               <video autoplay muted>
                 <source src="./image/main.mp4" type="video/mp4">
               </video>
             </div>
           </div>          
-          <div class="section1_1">
+          <div class="section1_1" style="visibility:hidden">
             <div class="title2">
               <p>2024년 4월 16일, 세월호 참사가 어느새 10주기를 맞이합니다. 우리는 “참사 이후는 달라져야 한다”는 다짐을 기억하며, 4월 16일의 노란 리본을 기억합니다. 10년이라는 시간은 무언가를 잊을 만큼 긴 시간이지만, 우리는 기억은 힘이 세다는 것을 알고 있습니다. 4.16재단은 기억의 힘으로 생명이 존중받는 안전한 사회를 만들어 갑니다.</p>
             </div>
           </div>
 
-          <div class="section_back">
+          <div class="section_back" style="visibility:hidden">
             <!-- 소개 -->
             <div id="introduce" class="section2">
               <div class="title3">
@@ -76,7 +76,7 @@
                   </div>
                 </div>
               </div>
-              <div class="title8">
+              <div class="title8" style="visibility:hidden">
                 <div class="title8_div">
                   <p class="p_title">컬러폰트</p><br>
                   <p class="p_content">컬러폰트는 4.16재단 CI 색상을 바탕으로 제작되었습니다. 메인이 되는 두 색상의 노란 컬러는 '기억과 안전'을 상징하며 각각 리본의 앞면과 뒷면을 연상케합니다. 이를 통해 리본이 유기적으로 접히는 듯한 유쾌한 모습을 담았습니다. 글자 하나하나의 색상 조합이 조화롭게 보이도록 획마다 명확한 규칙을 설정하여, 획이 많아 복잡한 형태에도 균형감있는 인상을 가지고 있습니다.</p>
@@ -98,7 +98,7 @@
             </div>
 
 
-            <div id="campaign" class="section3">
+            <div id="campaign" class="section3" style="visibility:hidden">
               <p class="p_title">기억은 힘이 세지</p>
               <p class="p_content">원하는 카드를 골라 직접 메시지를 작성해보세요.<br>완성된 이미지를 다운로드 받아 #기억은힘이세지 10주기 캠페인에 참여할 수 있어요.</p>
               <div class="preview">
@@ -132,7 +132,7 @@
                     </div>
                   </div>
 
-                  <div class="select_background" >
+                  <div class="select_background" style="visibility:hidden">
                     <p class="title">배경이미지</p>
                     <div class="background_img">
                       <div class="background-box active" img-src="./image/background_img1" id="img1"></div>
@@ -149,7 +149,7 @@
                     </div>
                   </div>
 
-                  <div class="button_div">
+                  <div class="button_div" style="visibility:hidden">
                     <div class="save" id="save">저장하기</div>
                     <div class="reset" id="reset">초기화</div>
                   </div>
@@ -168,9 +168,12 @@
                 <div class="download_div">
                   <div class="left">
                     <p class="font_format">폰트포멧</p>
-                    <a href="./font/416_otf.zip"><div class="otf_btn"></div></a>
-                    <a href="./font/416_ttf.zip"><div class="ttf_btn tooltip2"><span class="tooltiptext">한컴오피스, 구버전 MS오피스 등 일부의 앱은 컬러 폰트 기술을
-                      지원하지 않아, 컬러가 구현되지 않을 수 있습니다.</span></div></a>
+                    <a href="./font/416_otf.zip"><div class="otf_btn" onmousemove="myFunction(event)"></div></a>
+                    <a href="./font/416_ttf.zip">
+                      <div class="ttf_btn tooltip2" onmousemove="myFunction(event)">
+                        <span id="tooltip" class="tooltiptext">한컴오피스, 구버전 MS오피스 등 일부의 앱은 컬러 폰트 기술을 지원하지 않아, 컬러가 구현되지 않을 수 있습니다.</span>
+                      </div>
+                    </a>
                     <div class="woff">
                       <a href="./font/416_woff.zip"><div class="woff_btn"></div></a>
                       <a href="./font/416_woff2.zip"><div class="woff2_btn"></div></a>
@@ -198,10 +201,9 @@
                     <p class="font_spec">• «사월십육일체»의 지식재산권은 4.16재단에 있으며 폰트 파일은 유로로 판매할 수 없습니다.*</p>
                   </div>
                 </div>
-                
               </div>
             </div>
-            <div id="slider_div">
+            <div id="slider_div" style="visibility:hidden">
               <div id="slider">
                 <div id="slide-container">
                     <div class="slide" style="background-image:url('./image/ex1.png');"></div>
@@ -216,7 +218,7 @@
           </div>
         </div>
         <!-- 푸터 -->
-        <footer class="footer"  style="justify-content: space-between; display:flex; ">
+        <footer class="footer"  style="justify-content: space-between; display:flex; visibility:hidden;">
           <div class="header_left" >
             <p class="copyright">Copyrightⓒ재단법인 4·16재단. All rights reserved.</p>
           </div>
